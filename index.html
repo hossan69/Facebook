@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>facebook - লগ ইন</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #1877f2;
+            padding: 10px 20px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .login-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .left-text {
+            max-width: 400px;
+            margin-top: 80px;
+        }
+
+        .left-text h1 {
+            font-size: 48px;
+            color: #1877f2;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .left-text p {
+            font-size: 24px;
+            color: #1c1e21;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px 30px;
+            width: 360px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 14px 12px;
+            margin: 8px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .login-container button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .login-container button:hover {
+            background-color: #165ec9;
+        }
+
+        .forgot-link {
+            display: block;
+            margin-top: 14px;
+            font-size: 14px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        .create-account {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #dadde1;
+        }
+
+        .create-account button {
+            background-color: #42b72a;
+            width: 100%;
+            font-weight: 700;
+        }
+
+        .create-account button:hover {
+            background-color: #36a420;
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px 0;
+            color: #606770;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #606770;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">facebook</div>
+
+    <div class="login-wrapper">
+
+        <div class="left-text">
+            <h1>ফেসবুকে আপনার বিশ্ব খুঁজে পান।</h1>
+            <p>বন্ধুদের সাথে সংযুক্ত থাকুন এবং নতুন মানুষের সাথে পরিচিত হোন।</p>
+        </div>
+
+        <div class="login-container">
+            <form onsubmit="handleLogin(event)">
+                <input type="text" id="email" placeholder="ইমেইল অথবা ফোন নম্বর" required />
+                <input type="password" id="password" placeholder="পাসওয়ার্ড" required />
+                <button type="submit">লগ ইন</button>
+            </form>
+            <a href="#" class="forgot-link">পাসওয়ার্ড ভুলে গেছেন?</a>
+
+            <div class="create-account">
+                <button onclick="alert('নতুন অ্যাকাউন্ট তৈরি করার ফিচার এই ডেমোতে নেই।')">নতুন অ্যাকাউন্ট তৈরি করুন</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="#">বাংলা</a> |
+        <a href="#">English (US)</a> |
+        <a href="#">हिन्दी</a> |
+        <a href="#">اردو</a> |
+        <a href="#">Español</a> |
+        <a href="#">Português (Brasil)</a> |
+        <a href="#">Deutsch</a> |
+        <a href="#">Français (France)</a>
+    </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('এই পেজটি শুধুমাত্র ডেমো; কোনো লগইন ফাংশন নেই।');
+        }
+    </script>
+
+</body>
+
+</html>
